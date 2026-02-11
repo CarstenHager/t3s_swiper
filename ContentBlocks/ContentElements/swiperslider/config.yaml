@@ -1,5 +1,6 @@
 name: t3s/swiperslider
 title: Swiper Slider
+group: T3S Swiper
 description: Swiper - is the free and most modern mobile touch slider with hardware accelerated transitions and amazing native behavior
 basics:
   - T3S/SwiperSlides
