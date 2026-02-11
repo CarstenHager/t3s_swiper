@@ -13,7 +13,7 @@
 ## Requirements
 
 - TYPO3 >= 13.4
-- ext:content_blocks >= 1.3.18
+- ext:content_blocks >= 1.3.19
 
 ## Usage
 
