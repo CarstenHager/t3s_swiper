@@ -399,18 +399,18 @@ class AssetsViewHelper extends AbstractViewHelper
         $js = '';
 
         $thumbloop = '';
-        if (!empty($settings['parameter']['loop'])) {
+        if (!empty($settings['thumbnails']['loop'])) {
             $thumbloop = 'loop:true,';
         }
         $js .= "    var swiperThumb".$uid." = new Swiper('.swiper-thumb-".$uid."', {";
 
         $spaceBetween = '';
-        if (!empty($settings['parameter']['thumbnailsSpaceBetween'])) {
-            $spaceBetween = 'spaceBetween:'.(int)$settings['parameter']['thumbnailsSpaceBetween'].',';
+        if (!empty($settings['thumbnails']['thumbnailsSpaceBetween'])) {
+            $spaceBetween = 'spaceBetween:'.(int)$settings['thumbnails']['thumbnailsSpaceBetween'].',';
         }
         $slidesPerView = '';
-        if (!empty($settings['parameter']['thumbnailsSlidesPerView'])) {
-            $slidesPerView = 'slidesPerView:'. (int)$settings['parameter']['thumbnailsSlidesPerView'].',';
+        if (!empty($settings['thumbnails']['thumbnailsSlidesPerView'])) {
+            $slidesPerView = 'slidesPerView:'. (int)$settings['thumbnails']['thumbnailsSlidesPerView'].',';
         }
 
         $js .= $thumbloop.$spaceBetween.$slidesPerView."freeMode:true,watchSlidesProgress: true,";
@@ -421,7 +421,7 @@ class AssetsViewHelper extends AbstractViewHelper
 
 
     /**
-    * Convert a hexa decimal color code to its RGB equivalent
+    * Convert a hexadecimal color code to its RGB equivalent
     */
     protected static function hex2RGB(string $hexStr, string $seperator = ','): string
     {

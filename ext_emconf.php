@@ -11,11 +11,11 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Helmut Hackbarth',
     'author_email' => 'typo3@t3solution.de',
     'author_company' => 'T3Solution',
-    'version' => '0.0.8',
+    'version' => '0.0.9-dev',
     'constraints' => [
         'depends' => [
             'typo3' => '13.4.0-13.4.99',
-            'content_blocks' => '1.3.18-1.3.99'
+            'content_blocks' => '1.3.19-1.3.99'
         ],
         'conflicts' => [
         ],
